@@ -18,3 +18,8 @@ Funcionando para termux, Kali Linux y parrot security.
 
 # Instalación
 
+* ` apt-get update && apt-get upgrade -y `
+
+* ` git clone
+* ` cd `
+* ` bash `
