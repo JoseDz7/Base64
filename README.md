@@ -23,5 +23,6 @@ Funcionando para termux, Kali Linux y parrot security.
 * ` apt-get update && apt-get upgrade -y `
 
 * ` git clone https://github.com/piratainformatico2/Base64 `
-* ` cd Base64`
-* ` bash `
+* ` cd Base64 `
+* ` chmod 775 Cr1pT064 `
+* ` bash Cr1pT064 `
