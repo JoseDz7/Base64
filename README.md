@@ -26,3 +26,8 @@ Funcionando para termux, Kali Linux y parrot security.
 * ` cd Base64 `
 * ` chmod 775 Cr1pT064 `
 * ` bash Cr1pT064 `
+
+## Créditos
+**Ofuscado by julioCj7**
+[julioCj7](https://github.com/Juliocj7/UtilsCj7)
+[Agradezco todo el apollo a los que están desde mis inicios apoyándome los amo]
