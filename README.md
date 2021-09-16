@@ -22,6 +22,6 @@ Funcionando para termux, Kali Linux y parrot security.
 
 * ` apt-get update && apt-get upgrade -y `
 
-* ` git clone `
-* ` cd `
+* ` git clone https://github.com/piratainformatico2/Base64 `
+* ` cd Base64`
 * ` bash `
