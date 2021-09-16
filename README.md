@@ -29,5 +29,7 @@ Funcionando para termux, Kali Linux y parrot security.
 
 ## Créditos
 **Ofuscado by julioCj7**
+
 [julioCj7](https://github.com/Juliocj7/UtilsCj7)
-[Agradezco todo el apollo a los que están desde mis inicios apoyándome los amo]
+
+**[Agradezco todo el apollo a los que están desde mis inicios apoyándome los amo]**
