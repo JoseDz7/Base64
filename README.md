@@ -20,6 +20,6 @@ Funcionando para termux, Kali Linux y parrot security.
 
 * ` apt-get update && apt-get upgrade -y `
 
-* ` git clone
+* ` git clone `
 * ` cd `
 * ` bash `
