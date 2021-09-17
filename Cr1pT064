@@ -188,7 +188,7 @@ echo -e "${rojo} No es buena idea estar aqui"
 echo -e "${rojo} Te lo adverti"
 touch miron1 miron2 miron3 miron4 miron5 miron6 miron7 miron8 miron9 miron10 miron11 miron12 miron13 miron14 miron15 miron16 miron17 miron18 miron19 miron20
 
-echo -e "${verde} Eliminarloa sera facil"
+echo -e "${verde} Eliminarlos sera facil"
 sleep 5000000000000000000
 else
 	echo -e "${rojo} Opcion incorrecta elige bien puto${verde} :("
