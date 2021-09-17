@@ -1,0 +1,200 @@
+#!/bin/bash
+
+# Creado por: Sharkcode
+
+# 64c0d3Corp ~~ PR1V4T3 UND3RC0N ~~ JOSE DIAZ (10/SEP/2021) (9:55PM)
+
+#CODIGO LIBRE
+
+# ===============================================
+#               COLORES RESALTADOS :D
+# ===============================================
+negro="\e[1;30m"
+azul="\e[1;34m"
+verde="\e[1;32m"
+cian="\e[1;36m"
+rojo="\e[1;31m"
+purpura="\e[1;35m"
+amarillo="\e[1;33m"
+blanco="\e[1;37m"
+# ===============================================
+#                 COLORES BAJOS
+# ===============================================
+black="\e[0;30m"
+blue="\e[0;34m"
+green="\e[0;32m"
+cyan="\e[0;36m"
+red="\e[0;31m"
+purple="\e[0;35m"
+yellow="\e[0;33m"
+white="\e[0;37m"
+#                BANNER DE TEXTO.. ..
+
+Banner64(){
+	clear
+	sleep 0.5
+	echo ""
+echo -e  "${verde}        ██████╗ ██████╗ ██████╗ ███████╗                                    "
+echo -e  "${verdd}       ██╔════╝██╔═══██╗██╔══██╗██╔════╝                                    "
+echo -e  "${verde}       ██║     ██║   ██║██║  ██║█████╗    ${negro}  ▄▀▀▀▀▀▄            "
+echo -e  "${verde}       ██║     ██║   ██║██║  ██║██╔══╝    ${negro} ▐ ▄   ▄ ▌           "
+echo -e  "${verde}       ╚██████╗╚██████╔╝██████╔╝███████╗  ${negro} ▐ ▀▀ ▀▀ ▌           "
+echo -e  "${verde}        ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝  ${negro}  ▀▄ ═ ▄▀            "
+echo -e  "${verde}                                          ${negro}  ▐ ▀▄▀ ▌            "
+echo -e "${azul}                        BASE64                        "                      
+echo -e "${negro}  ▄▄▄                  ──────────────  ${rojo}  ▄▀█▀█▀▄                "     
+echo -e "${negro}  █▀█▀█ █▀█  █▀█ ▄███▄  ─────────────  ${rojo} ▀▀▀▀▀▀▀▀▀  ▄▄▄▄▄        "
+echo -e "${negro}  █▀█▀█ █▀██ █▀█ █▄█▄█             ▄▄   ${rojo}   ░░░   ▄█▄█▄█▄█▄      "
+echo -e " ${negro} █▀█▀█ █▀████▀█ █▄█▄█    ── ▄▄─── ▐▌   ${rojo}    +       ░░░          "
+echo -e "${negro}  █▀█▀█ █▀████▀█ █▄█▄█ ▌██▐▌▐█▐▐▌█▌█▌█▌▌${rojo}    +       ░░░          "
+}
+Menu(){
+	Banner64
+echo ""
+printf "${negro}[${verde} ¿? ${negro}]${negro} >>>${verde} MENU V1 PRIMERA VERSION" | pv -qL 12
+echo ""
+echo ""
+echo -e "${negro}[${verde} 01 ${negro}]${negro} >>>${verde} Ofuscar texto (Base64)${rojo} :)"
+echo -e "${negro}[${verde} 02 ${negro}]${negro} >>>${verde} Desofuscar texto (Base64)${rojo} :)"
+echo -e "${negro}[${verde} 03 ${negro}]${negro} >>>${verde} Ofuscar archivo (Base64)${rojo} :)"
+echo -e "${negro}[${verde} 04 ${negro}]${negro} >>>${verde} Desofuscar archivo (Base64)${rojo} :)"
+echo ""
+echo -e "${negro}[${verde} 05 ${negro}]${negro} >>>${verde} Salir ${rojo} :("
+echo -e -n "${negro}
+${negro}[${verde} :D ${negro}]${negro} >>>${verde} Escribe una opcion${rojo} :)
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read -r OPTION
+
+
+if [[ "${OPTION}" == "1" || "${OPTION}" == "01" ]]; then
+	clear
+	Banner64
+echo -e -n "${negro}
+${negro}[${verde} :D ${negro}]${negro} >>>${verde} Escribe un texto para ofuscar${rojo} :)
+
+${negro}[${verde} :/ ${negro}]${negro} >>>${verde} Ejemplo: CalaverisYT${rojo} :)
+
+${negro}[${verde} >> ${negro}] >>>" ${verde}
+read -r Text
+echo "$Text" > cuaking.txt
+base64 cuaking.txt > /dev/null 2>&1
+base64 cuaking.txt > OfuskPass
+rm -r cuaking.txt
+mv OfuskPass ofuscados/
+echo
+echo -e "${negro}[${verde} :D ${negro}]${negro} >>>${verde} Tu texto esta listo en la carpeta ofuscados(OfuskPass)${rojo} :)"
+echo -e -n "${negro}
+${negro}[${verde} :) ${negro}]${negro} >>>${verde} Presione ${cian} ENTER${verde} para continuar${rojo} :)
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read $ENTER
+bash Cr1pT064
+
+elif [[ "${OPTION}" == "2" || "${OPTION}" == "02" ]]; then
+	clear
+	Banner64
+echo -e -n "${negro}
+${negro}[${verde} :D ${negro}]${negro} >>>${verde} Escribe una ruta para desofuscar${rojo} :)
+
+${negro}[${verde} :/ ${negro}]${negro} >>>${verde} Ejemplo:/data/data/com.termux/files/home/ScriptKiddie.txt
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read -r Text2
+base64 -d $Text2 > Desofuks.txt
+mv Desofuks.txt
+echo ""
+echo -e "${negro}[${verde} :D ${negro}]${negro} >>>${verde} Tu texto desofuscado esta listo desofuscados(Desofuks.txt)${rojo} :)"
+sleep 0.5
+echo -e -n "${negro}
+${negro}[${verde} :) ${negro}]${negro} >>>${verde} Presione${cian} ENTER${verde} para continuar${rojo} :)
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read $ENTER 
+bash Cr1pT064
+
+elif [[ "${OPTION}" == "3" || "${OPTION}" == "03" ]]; then
+	clear
+	Banner64
+echo -e -n "${negro}
+${negro}[${verde} :D ${negro}]${negro} >>>${verde} Escribe una ruta de un archivo a ofuscar${rojo} :)
+
+${negro}[${verde} :/ ${negro}]${negro} >>>${verde} Ejemplo:/data/data/com.termux/files/home/readme.txt
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read -r Arch
+echo -e -n "${negro}
+${negro}[${verde} :D ${negro}]${negro} >>>${verde} Escribe un nuevo nombre${rojo} :)
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read -r Namefusk
+
+touch $Namefusk
+base64 $Arch > $Namefusk
+mv $Namefusk 'ofuscados/'
+echo
+echo -e "${negro}[${verde} :D ${negro}] >>>${verde} Tu archivo ofuscado($Namefusk) Esta en la carpeta ofuscados${rojo} :)"
+echo -e -n "${negro}
+${negro}[${verde} :) ${negro}]${negro} >>>${verde} Presione${cian} ENTER${verde} para continuar${rojo} :)
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read $ENTER
+bash Cr1pT064
+
+elif [[ "${OPTION}" == "4" || "${OPTION}" == "04" ]]; then
+	clear
+	Banner64
+echo -e -n "${negro}
+${negro}[${verde} :D ${negro}]${negro} >>>${verde} Escribe una ruta de un archivo a desofuscar${rojo} :)
+
+${negro}[${verde} :/ ${negro}]${negro} >>>${verde} Ejemplo:/data/data/com.termux/files/home/readme.txt
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read -r Arch2
+echo -e -n "${negro}
+${negro}[${verde} :D ${negro}]${negro} >>>${verde} Escribe un nuevo nombre${rojo} :)
+                                                                              ${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+
+read -r Namefusk2
+touch $Namefusk2
+base64 -d $Arch2 > $Namefusk2
+mv $Namefusk2 'desofuscados/'
+echo
+sleep 0.5
+echo -e "${negro}[${verde} :D ${negro}] >>>${verde} Tu archivo desofuscado esta en la carpeta desofuscados${rojo} :)"
+echo -e -n "${negro}
+${negro}[${verde} :) ${negro}]${negro} >>>${verde} Presione${cian} ENTER${verde} para continuar${rojo} :)
+
+${negro}[${verde} >> ${negro}]${negro} >>>" ${verde}
+read $ENTER
+bash Cr1pT064
+
+elif [[ "${OPTION}" == "5" || "${OPTION}" == "05" ]]; then
+	clear
+	sleep 0.5
+printf "${rojo}                        Menu secret 777                   
+${negro}  ▄▄▄                  ──────────────  ${rojo}  ▄▀█▀█▀▄                
+${negro}  █▀█▀█ █▀█  █▀█ ▄███▄  ─────────────  ${rojo} ▀▀▀▀▀▀▀▀▀  ▄▄▄▄▄        
+${negro}  █▀█▀█ █▀██ █▀█ █▄█▄█             ▄▄   ${rojo}   ░░░   ▄█▄█▄█▄█▄      
+ ${negro} █▀█▀█ █▀████▀█ █▄█▄█    ── ▄▄─── ▐▌   ${rojo}    +       ░░░          
+${negro}  █▀█▀█ █▀████▀█ █▄█▄█ ▌██▐▌▐█▐▐▌█▌█▌█▌▌${rojo}    +       ░░░     " | pv -qL 14
+
+echo -e "${verde} Hasta pronto los amo mucho los quiero!!" 
+
+elif [[ "${OPTION}" == "777" ]]; then
+	clear
+echo -e "${rojo} Que haces aqui curioso"
+echo -e "${rojo} No es buena idea estar aqui"
+echo -e "${rojo} Te lo adverti"
+touch miron1 miron2 miron3 miron4 miron5 miron6 miron7 miron8 miron9 miron10 miron11 miron12 miron13 miron14 miron15 miron16 miron17 miron18 miron19 miron20
+
+echo -e "${verde} Eliminarloa sera facil"
+sleep 5000000000000000000
+else
+	echo -e "${rojo} Opcion incorrecta elige bien puto${verde} :("
+	sleep 2
+	Menu
+
+fi
+}
+Menu
