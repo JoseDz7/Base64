@@ -28,7 +28,7 @@ Funcionando para termux, Kali Linux y parrot security.
 * ` bash Cr1pT064 `
 
 ## Créditos
-**Ofuscado by julioCj7**
+**julioCj7**
 
 [julioCj7](https://github.com/Juliocj7/UtilsCj7)
 
